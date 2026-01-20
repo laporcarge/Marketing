@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayuda Meta Ads</title>
+  <meta name="description" content="3 planes de ayuda en Meta Ads. Escribinos y te ayudamos a potenciar tus ventas." />
+
+  <!-- ✅ Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1863041204266352');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1863041204266352&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:linear-gradient(135deg,#2b0a3d,#ff7a18);
+      color:#fff
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:48px 20px}
+    .card{
+      background:rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:18px;
+      padding:28px;
+      backdrop-filter: blur(8px)
+    }
+    h1{font-size:44px;line-height:1.1;margin:0 0 10px}
+    p{opacity:.95;font-size:18px;margin:0 0 22px}
+    .plans{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:14px;
+      margin:22px 0
+    }
+    .plan{
+      padding:18px;
+      border-radius:14px;
+      background:rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.14)
+    }
+    .plan h3{margin:0 0 8px;font-size:20px}
+    .plan p{margin:0;font-size:15px;opacity:.95}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:14px 18px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:700
+    }
+    .primary{background:#fff;color:#2b0a3d}
+    .ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+    .small{opacity:.8;font-size:13px;margin-top:14px}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Ayuda Meta Ads</h1>
+      <p>✨ Tenemos 3 planes de ayuda en Meta Ads para que puedas publicitar mejor y potenciar tus ventas.</p>
+
+      <div class="plans">
+        <div class="plan">
+          <h3>Base</h3>
+          <p>Guía paso a paso general para aprender a publicitar desde cero.</p>
+        </div>
+        <div class="plan">
+          <h3>Medio</h3>
+          <p>Estrategia según tus objetivos (ventas, mensajes, alcance, etc.).</p>
+        </div>
+        <div class="plan">
+          <h3>Premium</h3>
+          <p>Análisis completo + plan personalizado (objetivos, público, propuesta y anuncios).</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <!-- ✅ Botón WhatsApp con evento Contact -->
+        <a
+          id="btn-whatsapp"
+          class="btn primary"
+          href="https://wa.me/5493517386955?text=Hola%20quiero%20info%20sobre%20los%203%20planes%20de%20Ayuda%20Meta%20Ads"
+          target="_blank"
+          rel="noopener"
+        >
+          📩 Escribinos por WhatsApp
+        </a>
+
+        <!-- Instagram (si querés, reemplazá TUUSUARIO) -->
+        <a class="btn ghost" href="https://instagram.com/TUUSUARIO" target="_blank" rel="noopener">
+          📷 Ver Instagram
+        </a>
+      </div>
+
+      <div class="small">© Ayuda Meta Ads — Respuesta rápida por WhatsApp.</div>
+    </div>
+  </div>
+
+  <!-- ✅ Evento por click en WhatsApp -->
+  <script>
+    const waBtn = document.getElementById('btn-whatsapp');
+
+    waBtn?.addEventListener('click', () => {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Contact', {
+          channel: 'WhatsApp',
+          phone: '5493517386955',
+          page: 'landing'
+        });
+      }
+    });
+  </script>
+</body>
+</html>
