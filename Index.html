@@ -1,93 +1,154 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ayuda Meta Ads</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayuda Meta Ads</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #2b0a3d, #ff7a18);
-      color: white;
-    }
-    .wrap {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    .card {
-      background: rgba(0,0,0,.4);
-      border-radius: 16px;
-      padding: 30px;
-    }
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 18px;
-    }
-    .plans {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-      gap: 15px;
-      margin: 25px 0;
-    }
-    .plan {
-      background: rgba(255,255,255,.12);
-      padding: 18px;
-      border-radius: 12px;
-    }
-    .cta {
-      margin-top: 20px;
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-    a.btn {
-      padding: 14px 20px;
-      border-radius: 999px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .primary {
-      background: white;
-      color: #2b0a3d;
-    }
-  </style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      background: linear-gradient(135deg, #2b0a3d, #ff7a18);
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 900px;
+      padding: 40px 20px;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 16px;
+      padding: 30px;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 1.1;
+    }
+
+    p {
+      margin: 10px 0 0;
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    .plans {
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .plan {
+      background: rgba(255, 255, 255, 0.12);
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .plan h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .plan p {
+      margin: 0;
+      font-size: 16px;
+      opacity: 0.95;
+    }
+
+    .cta {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    a.btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    a.btn:hover {
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+
+    .primary {
+      background: #ffffff;
+      color: #2b0a3d;
+    }
+
+    @media (max-width: 420px) {
+      h1 {
+        font-size: 34px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="card">
-      <h1>Ayuda Meta Ads</h1>
-      <p>Tenemos 3 planes para ayudarte a publicitar mejor y vender más.</p>
+  <div class="wrap">
+    <div class="card">
+      <h1>Ayuda Meta Ads</h1>
+      <p>Tenemos 3 planes para ayudarte a publicitar mejor y vender más.</p>
 
-      <div class="plans">
-        <div class="plan">
-          <h3>Base</h3>
-          <p>Guía paso a paso desde cero.</p>
-        </div>
-        <div class="plan">
-          <h3>Medio</h3>
-          <p>Estrategia según tus objetivos.</p>
-        </div>
-        <div class="plan">
-          <h3>Premium</h3>
-          <p>Análisis y plan personalizado.</p>
-        </div>
-      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3>Base</h3>
+          <p>Guía paso a paso desde cero.</p>
+        </div>
 
-      <div class="cta">
-        <a class="btn primary"
-           href="https://wa.me/5492235338047"
-           target="_blank">
-           📩 Escribinos por WhatsApp
-        </a>
-      </div>
-    </div>
-  </div>
+        <div class="plan">
+          <h3>Medio</h3>
+          <p>Estrategia según tus objetivos.</p>
+        </div>
+
+        <div class="plan">
+          <h3>Premium</h3>
+          <p>Análisis y plan personalizado.</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a
+          class="btn primary"
+          href="https://wa.me/5492235338047"
+          target="_blank"
+          rel="noopener"
+        >
+          📩 Escribinos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
