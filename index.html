@@ -1,214 +1,119 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Impulse Marketing</title>
-
-  <style>
-    :root{
-      --bg1:#0b0712;
-      --bg2:#1a0b2e;
-      --accent:#b86bff;
-      --accent2:#ff7a18;
-      --card: rgba(255,255,255,.08);
-      --stroke: rgba(255,255,255,.14);
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.72);
-    }
-
-    *{ box-sizing:border-box; }
-    html,body{ height:100%; }
-
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      color: var(--text);
-      background:
-        radial-gradient(900px 600px at 15% 10%, rgba(184,107,255,.35), transparent 60%),
-        radial-gradient(900px 600px at 85% 15%, rgba(255,122,24,.30), transparent 55%),
-        linear-gradient(135deg, var(--bg1), var(--bg2));
-      min-height: 100svh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding: 24px 0;
-    }
-
-    .wrap{
-      width:100%;
-      max-width: 980px;
-      padding: 24px 18px;
-      padding-bottom: env(safe-area-inset-bottom);
-    }
-
-    .shell{
-      border-radius: 22px;
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(10,8,18,.55);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      box-shadow: 0 30px 80px rgba(0,0,0,.55);
-    }
-
-    header{
-      padding: 32px 26px 20px;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
-
-    .badge{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.14);
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 14px;
-    }
-
-    .dot{
-      width:10px;
-      height:10px;
-      border-radius:50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 14px rgba(184,107,255,.6);
-    }
-
-    h1{
-      margin: 0 0 10px;
-      font-size: clamp(34px, 4.6vw, 52px);
-      line-height: 1.05;
-      letter-spacing: -0.8px;
-    }
-
-    .sub{
-      margin: 0;
-      color: var(--muted);
-      font-size: 17px;
-      max-width: 60ch;
-    }
-
-    .content{
-      padding: 24px 26px;
-      display:grid;
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-      gap: 16px;
-    }
-
-    .card{
-      border-radius: 18px;
-      background: var(--card);
-      border: 1px solid var(--stroke);
-      padding: 18px;
-    }
-
-    .card h3{
-      margin:0 0 8px;
-      font-size: 18px;
-    }
-
-    .card p{
-      margin:0;
-      color: var(--muted);
-      font-size: 14.5px;
-      line-height: 1.45;
-    }
-
-    .ctaRow{
-      padding: 26px;
-      display:flex;
-      justify-content:center;
-    }
-
-    a.btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap: 10px;
-      padding: 16px 28px;
-      border-radius: 999px;
-      font-weight: 800;
-      font-size: 16px;
-      text-decoration:none;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      color:#14071f;
-      box-shadow: 0 18px 40px rgba(184,107,255,.25);
-      transition: transform .15s ease, opacity .15s ease;
-    }
-
-    a.btn:hover{
-      transform: translateY(-1px);
-      opacity:.95;
-    }
-
-    footer{
-      padding: 14px 26px 18px;
-      border-top: 1px solid rgba(255,255,255,.08);
-      color: rgba(255,255,255,.55);
-      font-size: 12px;
-      text-align:center;
-    }
-  </style>
 </head>
 
-<body>
-  <div class="wrap">
-    <div class="shell">
+<body style="
+  margin:0;
+  min-height:100vh;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#2b0a3d,#ff7a18);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+">
 
-      <header>
-        <div class="badge">
-          <span class="dot"></span>
-          Impulse Marketing · Meta Ads
-        </div>
+  <div style="
+    max-width:900px;
+    width:100%;
+    background:rgba(0,0,0,0.45);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.5);
+  ">
 
-        <h1>Convertimos clicks en ventas</h1>
-        <p class="sub">
-          Estrategia, optimización y crecimiento en Facebook e Instagram Ads
-          para negocios que buscan resultados reales.
+    <p style="
+      font-size:14px;
+      opacity:0.8;
+      margin:0 0 10px 0;
+    ">
+      Impulse Marketing · Meta Ads
+    </p>
+
+    <h1 style="
+      font-size:38px;
+      margin:0 0 15px 0;
+      line-height:1.1;
+    ">
+      Convertimos clicks en ventas
+    </h1>
+
+    <p style="
+      font-size:17px;
+      opacity:0.9;
+      margin:0 0 25px 0;
+    ">
+      Estrategia, optimización y crecimiento en Facebook e Instagram Ads
+      para negocios que buscan resultados reales.
+    </p>
+
+    <div style="
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:15px;
+      margin-bottom:30px;
+    ">
+
+      <div style="
+        background:rgba(255,255,255,0.12);
+        padding:18px;
+        border-radius:14px;
+      ">
+        <strong>🚀 Setup Profesional</strong>
+        <p style="margin:8px 0 0; font-size:14px;">
+          Configuración completa de campañas y eventos.
         </p>
-      </header>
-
-      <div class="content">
-        <div class="card">
-          <h3>🚀 Setup Profesional</h3>
-          <p>Configuración completa de campañas, estructura y eventos para empezar fuerte.</p>
-        </div>
-
-        <div class="card">
-          <h3>🎯 Estrategia a Medida</h3>
-          <p>Definimos objetivos, públicos y creatividades según tu negocio.</p>
-        </div>
-
-        <div class="card">
-          <h3>📊 Optimización Constante</h3>
-          <p>Seguimiento de métricas, mejoras y ajustes para escalar resultados.</p>
-        </div>
       </div>
 
-      <div class="ctaRow">
-        <a
-          class="btn"
-          href="https://wa.me/5492235338047?text=Hola%2C%20quiero%20info%20sobre%20los%20planes%21"
-          target="_blank"
-          rel="noopener"
-        >
-          💬 Contactar por WhatsApp
-        </a>
+      <div style="
+        background:rgba(255,255,255,0.12);
+        padding:18px;
+        border-radius:14px;
+      ">
+        <strong>🎯 Estrategia a Medida</strong>
+        <p style="margin:8px 0 0; font-size:14px;">
+          Públicos y creatividades según tu negocio.
+        </p>
       </div>
 
-      <footer>
-        © <span id="year"></span> Impulse Marketing
-      </footer>
+      <div style="
+        background:rgba(255,255,255,0.12);
+        padding:18px;
+        border-radius:14px;
+      ">
+        <strong>📊 Optimización Constante</strong>
+        <p style="margin:8px 0 0; font-size:14px;">
+          Ajustes para escalar resultados.
+        </p>
+      </div>
 
     </div>
+
+    <div style="text-align:center;">
+      <a
+        href="https://wa.me/5492235338047?text=Hola%2C%20quiero%20info%20sobre%20los%20planes%21"
+        target="_blank"
+        style="
+          display:inline-block;
+          padding:16px 28px;
+          background:white;
+          color:#2b0a3d;
+          font-weight:bold;
+          text-decoration:none;
+          border-radius:999px;
+          font-size:16px;
+        "
+      >
+        💬 Contactar por WhatsApp
+      </a>
+    </div>
+
   </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
